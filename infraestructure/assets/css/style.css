@@ -1,0 +1,32 @@
+/* Design do corpo, colocando no centro e configurações de toda a cor da tela */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Design do titulo da pagina interno */
+h1{
+    color: #333;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+/* Fazendo algumas modificações externas no player de audio */
+audio {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #625656;
+    border-radius: 5px;
+    background-color: #686464;
+    padding: 10px;
+}
+
+/* Configurações específicas para o player */
+audio::-webkit-media-controls-panel {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
