@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/* Importando uma fonte, também é possível por link */
+fonte-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
