@@ -5,25 +5,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Adicionando icon a página -->
+    <link rel="stylesheet" href="/infraestructure/assets/css/style.css">
     <link rel="shortcut icon" href="/infraestructure/assets/icons/favicon.ico" type="image/x-icon">
     <!-- Título da página -->
-    <title>Primeiro Site</title>
+    <title>Desmatamentos</title>
 </head>
 <!-- Todo corpo do projeto -->
 <body>
-    <h1>Meu Primeiro Site</h1>
-    <p>Inicializando o subtitulo</p>
-    <hr>
-    <ul>
-        <h2>
-            <!-- Adiciona um texto ao passar o mouse em cima do item -->
-            <abbr title="Páginas de Atividade">Atividades</abbr>
-        </h2>
-        <!-- Adiciona um link ao texto -->
-        <p><a href="atividade-03.html">Atividade 03</a></p>
-        <p><a href="sandbox.html">SandBox</a></p>
-        <p><a href="wprojeto.html">Projeto</a></p>
-    </ul>
+    <!-- Adicionando o cabeçalho da página -->
+    <header>
+        <div class="header">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="">Referencias</a>
+                <a href="index.html" class="sair">Sair</a>
+            </nav>
+            <h1>Monitoramento de Cidades</h1>
+        </div>
+    </header>
+    <!-- Adicionando o corpo da página -->
+    <main>
+        <div class="lista-cidades">
+            <h2>Lista de Cidades</h2>
+            <!-- Adicionando uma tabela com as cidades e suas informações -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cidade</th>
+                        <th>População</th>
+                        <th>Área Atual (km²)</th>
+                        <th>Área Desmatada (km²)</th>
+                        <th>% Desmatamento</th>
+                        <th>População por km²</th>
+                        <th>Nível</th>
+                        <th>Orientações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="vermelho">
+                        <td>Irecê</td>
+                        <td>74.321</td>
+                        <td>319</td>
+                        <td>280</td>
+                        <td>87.8%</td>
+                        <td>37.00</td>
+                        <td>Grave</td>
+                        <td class="orientacoes"></td>
+                    </tr>
+                    <tr class="amarelo">
+                        <td>Uibaí</td>
+                        <td>13.492</td>
+                        <td>545</td>
+                        <td>245</td>
+                        <td>45.0%</td>
+                        <td>24.76</td>
+                        <td>Mediano</td>
+                        <td class="orientacoes"></td>
+                    </tr>
+                    <tr class="verde">
+                        <td>Ibipeba</td>
+                        <td>16.603</td>
+                        <td>1382</td>
+                        <td>498</td>
+                        <td>36.0%</td>
+                        <td>12.01</td>
+                        <td>Razoável</td>
+                        <td class="orientacoes"></td>
+                    </tr>
+                    <tr class="vermelho">
+                        <td>Lapão</td>
+                        <td>25.739</td>
+                        <td>642</td>
+                        <td>565</td>
+                        <td>88.0%</td>
+                        <td>40.09</td>
+                        <td>Grave</td>
+                        <td class="orientacoes"></td>
+                    </tr>
+                    <tr class="verde">
+                        <td>Salvador</td>
+                        <td>2.418.055</td>
+                        <td>693</td>
+                        <td>213</td>
+                        <td>30.7%</td>
+                        <td>85.97</td>
+                        <td>Razoável</td>
+                        <td class="orientacoes"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <!-- Adicionando video a pagina diretamente do youtube -->
+    <div class="video">
+        <h3>Vídeo</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XsYhhYii2Es?si=rnil4CjRR_y_6ebv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h3>Sobre</h3>
+            <a href="index.html">Referencias</a>
+            <a href="index.html">Referencias</a>   
+        </div>
+        <div class="footer">
+            <h3>Atividades</h3>
+            <a href="atividade-03.html">Atividade 03</a>
+            <a href="sandbox.html">SandBox</a>
+            <a href="index.html">Projeto</a>
+        </div>
+    </footer>
+
 </body>
 
 </html>

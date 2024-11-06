@@ -2,6 +2,7 @@
     --cor-fundo: #e2f0d9;       /* Verde claro funda da tela */
     --cor-destaque: #3e8c3f;    /* Verde padrão para titulos, subtitulos */
     --cor-escuro: #2f2f2f;      /* Preto caso necessite */
+    --cor-branco: #fff;         /* Branco para textos */
   }
 
 /* Design do corpo, colocando no centro e configurações de toda a cor da tela */
@@ -42,6 +43,131 @@ ul {
     margin: 0 auto;
 }
 
+/* HEAD, NAV ---------------*/
+
+/* Modificando o header */
+header {
+    background-color: var(--cor-fundo);
+    padding: 20px;
+    border-bottom: 2px solid var(--cor-destaque, #3e8c3f);
+    text-align: center;
+}
+
+
+/* Modificações da Navegação */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+/* Modificações do botão de sair */
+.sair {   
+    color: var(--cor-fundo);
+    background-color: var(--cor-destaque);
+    background-position: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    align-items: center;
+}
+
+/* Modificações do botão de sair quando passar o mouse */
+.sair:hover {
+    color: var(--cor-fundo);
+    background-color: var(--cor-destaque);
+}
+
+
+/* Modificações dos links do nav */
+nav a {
+    text-decoration: none;
+    color: var(--cor-destaque);
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Modificações na nav quando passar o mouse*/
+nav a:hover {
+    color: var(--cor-destaque);
+    transform: translateX(5px);
+}
+
+/* Seções principais */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* ----- Modificando a tabela de dados */
+
+/* Div da lista de cidades config */
+.lista-cidades {
+    margin: 15px 0;
+}
+
+/* Config da tabela, tamanho, marge e tipo */
+.lista-cidades table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* Config dos th e td da lista */
+.lista-cidades th, .lista-cidades td {
+    padding: 12px;
+    text-align: center;
+}
+
+.lista-cidades th {
+    background-color: var(--cor-escuro);
+    color: var(--cor-branco);
+}
+
+/* Fundo dos nomes das cidades, talvez remover */
+.lista-cidades tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Cor para grave */
+.vermelho {
+    background-color: #ffdddd;
+    color: #d9534f;
+}
+
+/* Cor para mediano */
+.amarelo {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* Cor para razoavel */
+.verde {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.orientacoes::after {
+    margin: 20px 0;
+    color: orange;
+    content: "Saiba mais!";
+}
+
+
+/* Estilização do video */
+.video {
+    margin-bottom: 20px;
+    border-top: 2px solid var(--cor-destaque, #3e8c3f);
+    padding-top: 10px;
+}
+
+
+/* --------------- */
+
 /* Fazendo algumas modificações externas no player de audio */
 audio {
     width: 100%;
@@ -58,3 +184,65 @@ audio::-webkit-media-controls-panel {
     border-radius: 5px;
 }
 
+/* RODAPE --------------- */
+
+/* Config geral do footer, como o fundo, cor, tamanho, espaçamento */
+footer {
+    background-color: var(--cor-fundo);
+    color: var(--cor-escuro);
+    font-size: 1em;
+    text-align: center;
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    bottom: 0;
+    border-top: 2px solid var(--cor-destaque);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Modificações do footer, deixando vertical, alinhados */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    min-width: 150px;
+}
+
+/* Modifica o titulo do footer, cor, fonte, espaçamento */
+.footer h3 {
+    color: var(--cor-destaque);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Modifica os links do footer, cor, fonte, espaçamento */
+.footer a {
+    color: var(--cor-escuro);
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Modifica os links ao passar o mouse, cor e animação */
+.footer a:hover {
+    color: var(--cor-destaque);
+    transform: translateX(5px);
+}
+
+/* Modifica ao clicar, como cor e animação */
+.footer a:active {
+    color: var(--cor-destaque);
+    transform: translateX(3px);
+}
+
+/* Estilização da seção .sobre */
+.sobre {
+    color: var(--cor-escuro);
+    flex-basis: 100%; 
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
