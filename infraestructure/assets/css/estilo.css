@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 /* Importando uma fonte, também é possível por link */
-fonte-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Regular.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
