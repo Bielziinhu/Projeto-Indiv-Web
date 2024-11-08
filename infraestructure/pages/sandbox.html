@@ -12,17 +12,39 @@
 </head>
 <!-- Todo corpo do projeto -->
 <body>
-    <h1>SandBox</h1>
-    <hr>
+    <header>
+        <div class="header">
+            <nav>
+                <a href="../pages/index.html">Home</a>
+                <a href="../pages/index.html" class="sair">Sair</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>SandBox</h1>
     <!-- Adicionando audio a pagina -->
-    <audio preload="metadata" controls>
-        <source src="../assets/audios/musica1.mp3" type="audio/mp3">
-        <source src="../assets/audios/musica2.ogg" type="audio/ogg">
-        <p>Seu navegador não suporta audios. <a href="../assets/audios/musica1.mp3">Clique aqui</a> para baixar o arquivo.</p>
-    </audio>
-    <hr>
-    <!-- Adicionando video a pagina diretamente do youtube -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XsYhhYii2Es?si=rnil4CjRR_y_6ebv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <audio preload="metadata" controls>
+            <source src="../assets/audios/musica1.mp3" type="audio/mp3">
+            <source src="../assets/audios/musica2.ogg" type="audio/ogg">
+            <p>Seu navegador não suporta audios. <a href="../assets/audios/musica1.mp3">Clique aqui</a> para baixar o arquivo.</p>
+        </audio>
+        <div class="video">
+            <h3>Vídeo</h3>
+            <!-- Adicionando video a pagina diretamente do youtube -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XsYhhYii2Es?si=rnil4CjRR_y_6ebv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <h3>SustentCity</h3>
+            <a href="../pages/index.html">Sobre</a>
+            <a href="../pages/index.html">Contatos</a>
+        </div>
+        <div class="footer-img">
+            <img src="../assets/images/sustentcity-logo80.png" alt="Logo da SustentCity">
+        </div>
+    </footer>
+
 </body>
 
 </html>
