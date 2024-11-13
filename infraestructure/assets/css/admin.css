@@ -1,3 +1,5 @@
+/* CSS da tela admin */
+
 :root {
     --cor-fundo: #e2f0d9;       /* Verde claro funda da tela */
     --cor-destaque: #3e8c3f;    /* Verde padrão para titulos, subtitulos */
@@ -5,6 +7,7 @@
     --cor-branco: #fff;         /* Branco para textos */
   }
 
+  /* Forma global */
 * {
     margin: 0;
     padding: 0;
@@ -20,43 +23,6 @@ body {
     padding: 0;
 }
 
-/* Design do titulo da pagina interno */
-h1{
-    color: var(--cor-destaque);
-    font-size: 2em;
-    margin: 0;
-    padding: 0;
-}
-
-h2{
-    color: var(--cor-destaque);
-    font-size: 1.2em;
-    margin: 0;
-    padding: 0;
-}
-
-h3{
-    color: var(--cor-destaque);
-    font-size: 1em;
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    color: var(--cor-destaque);
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-}
-
-ul li a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: inherit; /* Herda a cor do item da lista */
-}
-
-/* HEAD, NAV ---------------*/
-
-/* Modificando o header */
 header {
     background-color: var(--cor-fundo);
     padding: 20px;
@@ -114,149 +80,143 @@ main {
     text-align: center;
 }
 
+main h2{
+    color: var(--cor-destaque);
+}
+
 
 /* ----- Modificando a tabela de dados */
 
+/* Config Caixa de admin */
+h2 {
+    color: #3e8c3f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Barra de pesquisa e botão de adicionar */
+.adicionar-usuarios {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Config para o input de pesquisa*/
+.adicionar-usuarios input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Efeitos e config do botao de add */
+.adicionar-usuarios .add-botao {
+    background-color: #3e8c3f;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilos da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* config do head da tabela */
+thead {
+    background-color: #3e8c3f;
+    color: #ffffff;
+}
+
+/* Configuração do th da tabela */
+thead th {
+    padding: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Efeito de uma cor sim e não para o body da tabela*/
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* config geral do td do body tabela */
+tbody td {
+    padding: 15px;
+    text-align: left;
+}
+
+/* Ajustando o espaçamento das colunas onde tem img*/
+td.td-img {
+    width: 50px;
+    padding: 5px;
+}
+
+/* Tirando todas as formatações dos botoes de editar e excluir */
+.botao {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* tamanho das img dos botoes*/
+.botao img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s;
+}
+
+/* Efeito ao passar o mouse em cima dos botoes */
+.botao:hover img {
+    transform: scale(1.2);
+}
+
 /* Div da lista de cidades config */
-.lista-cidades {
-    margin: 15px 0;
+.lista-usuarios {
+    margin: 15px 0px;
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #c9d7c0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
 /* Config da tabela, tamanho, marge e tipo */
-.lista-cidades table {
+.lista-usuarios table {
     width: 90%;
-    margin: 0 auto;
+    margin: 5px auto;
     border-collapse: collapse;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Config dos th e td da lista */
-.lista-cidades th, .lista-cidades td {
+.lista-usuarios th, .lista-usuarios td {
     padding: 12px;
     text-align: center;
     border: 1px solid var(--cor-escuro);
 }
 
-.lista-cidades th {
+.lista-usuarios th {
     background-color: var(--cor-escuro);
     color: var(--cor-branco);
 }
-
-/* Fundo dos nomes das cidades, talvez remover */
-.lista-cidades tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-/* Cor para grave */
-.vermelho {
-    background-color: #ffdddd;
-    color: #d9534f;
-}
-
-/* Cor para mediano */
-.amarelo {
-    background-color: #fff3cd;
-    color: #856404;
-}
-
-/* Cor para razoavel */
-.verde {
-    background-color: #d4edda;
-    color: #155724;
-}
-
-.orientacoes::after {
-    margin: 20px 0;
-    color: orange;
-    content: "Saiba mais!";
-    font-weight: bold;
-}
-
-
-/* Estilização do video */
-.video {
-    position: relative;
-    background-color: var(--cor-fundo);
-    height: 0px;
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-bottom: 15px;
-    border-top: 2px solid var(--cor-destaque, #3e8c3f);
-    padding-bottom: 40%;
-}
-
-.iframe {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-    border: none;
-}
-
-/* Tabela Orientações */
-.lista-orientacao {
-    margin: 15px 0;
-}
-  
-/* Modificações na tabela com sombra e tamanho */
-.lista-orientacao table {
-    width: 90%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-  
-/* Modificações nas colunas th e td */
-.lista-orientacao th, .lista-orientacao td {
-    padding: 12px;
-    text-align: left;
-    border: 1px solid #ddd;
-    border-bottom: none;
-}
-
-/* Modificações na coluna th e aumentando a  font*/
-.lista-orientacao th {
-    background-color: var(--cor-escuro);
-    color: var(--cor-branco);
-    font-size: 1.2em;
-    font-weight: bold;
-}
-  
-/* Cor de fundo mais clara para as linhas pares, possível remoção */
-.lista-orientacao tr:nth-child(even) {
-    background-color: #f5f5f5; 
-}
-  
-/* Adiciona a borda inferior na última linha */
-.lista-orientacao tr:last-child td {
-    border-bottom: 1px solid #ddd;
-}
-
-
-/* --------------- */
-
-/* Fazendo algumas modificações externas no player de audio */
-audio {
-    width: 100%;
-    max-width: 400px;
-    border: 1px solid var(--cor-audio-borda);
-    border-radius: 5px;
-    background-color: var(--cor-audio-fundo);
-    padding: 10px;
-}
-
-/* Configurações específicas para o player */
-audio::-webkit-media-controls-panel {
-    background-color: var(--cor-controles);
-    border-radius: 5px;
-}
-
-/* RODAPE --------------- */
 
 /* Config geral do footer, como o fundo, cor, tamanho, espaçamento */
 footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: var(--cor-fundo);
     color: var(--cor-escuro);
     font-size: 1em;
@@ -268,7 +228,6 @@ footer {
     border-top: 2px solid var(--cor-destaque);
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     border-top: 2px solid var(--cor-destaque);
-    position: relative;
 }
 
 /* Modificações do footer, deixando vertical, alinhados */

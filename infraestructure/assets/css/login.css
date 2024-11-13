@@ -1,0 +1,76 @@
+/* CSS da tela login */
+
+:root {
+    --cor-fundo: #e2f0d9;
+    --cor-destaque: #3e8c3f;
+    --cor-escuro: #2f2f2f;
+    --cor-erro: #e57373;
+    --cor-borda: #3e8c3f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor-fundo);
+}
+
+/* config da caixa do login por fora */
+.login-menu {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--cor-destaque);
+    margin-bottom: 20px;
+}
+
+/* config geral do label dos input */
+label {
+    display: block;
+    color: var(--cor-escuro);
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* config dos campos de input */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+}
+
+/* config geral do botao */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--cor-destaque);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* efeito botão passar o mouse em cima */
+button:hover {
+    background-color: var(--cor-escuro);
+}
