@@ -316,3 +316,92 @@ footer {
     margin-top: 20px;
     font-size: 0.9em;
 }
+
+/* Para telas menores que a padrão algumas modific, além de adaptações de fonte e tabelas */
+@media (max-width: 700px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        align-items: center;
+        gap: 10px; /* Espaçamento entre os itens */
+    }
+
+    nav a {
+        font-size: 0.9em;
+    }
+
+    .sair {
+        padding: 8px 16px; /* Reduz o tamanho do botão */
+        font-size: 0.9em;
+    }
+
+    .lista-cidades table, .lista-orientacao table {
+        width: 100%;
+        margin: 0 auto; /* Centraliza horizontalmente */
+        table-layout: fixed;
+    }
+
+    .lista-cidades th, .lista-cidades td, .lista-orientacao th, .lista-orientacao td {
+        padding: 8px;
+        font-size: 0.9em;
+        word-wrap: break-word; /* Quebra o texto que passar as linhas */
+    }
+
+    /* config para o rodape */
+    footer {
+        flex-direction: column; 
+        padding: 10px;
+    }
+
+    .footer {
+        align-items: center; 
+        margin: 5px;
+    }
+
+    .footer h3 {
+        font-size: 1em;
+    }
+
+    .footer a {
+        font-size: 0.8em;
+    }
+}
+
+/* Deixando responsivo para telas menores que essa, modificando tabelas, nav, fonte */
+@media (max-width: 480px) {
+    header {
+        padding: 8px;
+    }
+
+    nav a {
+        font-size: 0.8em;
+    }
+
+    .lista-cidades table, .lista-orientacao table {
+        width: 100%;
+        margin: 0 auto;
+        table-layout: fixed;
+    }
+
+    .lista-cidades th, .lista-cidades td, .lista-orientacao th, .lista-orientacao td {
+        padding: 6px;
+        font-size: 0.8em;
+        word-wrap: break-word; /* Quebra o texto que passar as linhas */
+    }
+
+    /* config para o rodape */
+    footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .footer h3 {
+        font-size: 0.9em;
+    }
+
+    .footer a {
+        font-size: 0.7em;
+    }
+}

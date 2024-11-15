@@ -174,11 +174,6 @@ td.td-img {
     transition: transform 0.3s;
 }
 
-/* Efeito ao passar o mouse em cima dos botoes */
-.botao:hover img {
-    transform: scale(1.2);
-}
-
 /* Div da lista de cidades config */
 .lista-usuarios {
     margin: 15px 0px;
@@ -275,3 +270,97 @@ footer {
     margin-top: 20px;
     font-size: 0.9em;
 }
+
+@media (max-width: 1024px) {
+    nav {
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .adicionar-usuarios {
+        flex-direction: column;
+    }
+
+    .adicionar-usuarios input[type="text"] {
+        width: 100%;
+    }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    /* Ajustando o cabeçalho */
+    header {
+        padding: 10px;
+    }
+
+    /* Diminuindo a fonte do navegador */
+    nav a {
+        font-size: 0.9em;
+    }
+
+    /* Ajustando outros itens */
+    .lista-usuarios {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Ajustando toda a tabela */
+    .lista-usuarios table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+
+    /* mudando o tamanho e ajustando fonte, quebra de linhas quando diminuir a tela */
+    .lista-usuarios th, .lista-usuarios td {
+        padding: 7px; 
+        font-size: 0.9em;
+        word-wrap: break-word; /* Quebra o texto que passar as linhas */
+    }
+}
+
+/*  */
+@media (max-width: 480px) {
+    /* Ajustando cabeçalho*/
+    header {
+        padding: 8px;
+    }
+
+    /* Deixando o nav responsivo */
+    nav a {
+        font-size: 0.8em;
+    }
+
+    /* Itens dentro do container de pesquisa */
+    .lista-usuarios {
+        width: 100%;
+        margin: 0 auto; /* Centraliza */
+    }
+
+    /* Modificando totalmente a tabela e deixando o layout menor e responsivo */
+    .lista-usuarios table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+
+    /* Diminuindo fonte, quebrando linha do conteudo da tabela */
+    .lista-usuarios th, .lista-usuarios td {
+        padding: 6px;
+        font-size: 0.9em;
+        word-wrap: break-word; /* Quebra o texto que passar as linhas */
+    }
+
+    /* deixando os itens do rodape em coluna */
+    footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .footer h3 {
+        font-size: 1em;
+    }
+}
+
+
