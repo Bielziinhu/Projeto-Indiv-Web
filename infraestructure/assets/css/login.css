@@ -46,20 +46,16 @@ label {
     text-align: left;
 }
 
-/* config dos campos de input */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"] {
-    width: 100%;
+/* config dos campos de input com bootstrap */
+.form-control {
     padding: 10px;
-    margin-bottom: 15px;
     border: 1px solid var(--cor-borda);
     border-radius: 4px;
+    margin-bottom: 15px;
 }
 
 /* config geral do botao */
-button {
+.btn-primary {
     width: 100%;
     padding: 10px;
     background-color: var(--cor-destaque);
@@ -71,7 +67,7 @@ button {
 }
 
 /* efeito botão passar o mouse em cima */
-button:hover {
+.btn-primary:hover {
     background-color: var(--cor-escuro);
 }
 
@@ -83,7 +79,7 @@ button:hover {
     }
 
     .login-menu {
-        width: 60%;
+        width: 100%;
         padding: 15px;
     }
 
@@ -91,15 +87,12 @@ button:hover {
         font-size: 1.5em;
     }
 
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="date"] {
+    .form-control {
         padding: 8px;
         font-size: 14px;
     }
 
-    button {
+    .btn-primary {
         padding: 8px;
         font-size: 14px;
     }
@@ -111,19 +104,20 @@ button:hover {
         font-size: 1.2em;
         margin-bottom: 15px;
     }
+    .login-menu {
+        width: 100%;
+        padding: 15px;
+    }
 
     label {
         font-size: 14px;
     }
 
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="date"] {
+    .form-control {
         font-size: 12px;
     }
 
-    button {
+    .btn-primary {
         font-size: 12px;
     }
 }
