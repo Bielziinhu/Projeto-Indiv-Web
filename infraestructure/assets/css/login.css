@@ -33,6 +33,15 @@ body {
     text-align: center;
 }
 
+.registrar-menu {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
 h2 {
     color: var(--cor-destaque);
     margin-bottom: 20px;

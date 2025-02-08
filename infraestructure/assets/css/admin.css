@@ -122,35 +122,77 @@ h2 {
     text-align: center;
 }
 
-/* Barra de pesquisa e botão de adicionar */
-.adicionar-usuarios {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-/* Config para o input de pesquisa*/
-.adicionar-usuarios input[type="text"] {
-    width: 250px;
+/* Style para a edição de dados */
+#form-editar-usuario {
+    display: none;
+    margin-top: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    background-color: var(--cor-fundo);
     border-radius: 5px;
-    font-size: 16px;
 }
 
-/* Efeitos e config do botao de add */
-.adicionar-usuarios .add-botao {
-    background-color: #3e8c3f;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+#form-editar-usuario h3 {
+    color: var(--cor-destaque);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#form-edit-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#form-edit-usuario label {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--cor-escuro);
+    margin-right: 5px;
+}
+
+#form-edit-usuario input {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: auto;
+    min-width: 150px;
+}
+
+#form-edit-usuario button {
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid var(--cor-destaque);
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
+#form-edit-usuario button[type="submit"] {
+    background-color: var(--cor-destaque);
+    color: #ffffff;
+}
+
+#form-edit-usuario button[type="submit"]:hover {
+    background-color: var(--cor-escuro);
+}
+
+#form-edit-usuario #cancelar-edicao {
+    background-color: #ffffff;
+    color: var(--cor-destaque);
+}
+
+#form-edit-usuario #cancelar-edicao:hover {
+    background-color: var(--cor-fundo);
+}
+
+
+/*  */
 /* Estilos da Tabela */
 table {
     width: 100%;

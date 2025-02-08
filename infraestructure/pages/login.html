@@ -17,27 +17,26 @@
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="login-menu">
             <h2>Login</h2>
-            <form action="../pages/admin.html">
-                <!-- margem botton do bootstrap -->
+            <form id="login-form" onsubmit="event.preventDefault(); loginUsuario();">
+                 <!-- margem botton do bootstrap -->
                 <div class="mb-3">
                     <!-- Todas as validações -->
-                    <label for="name" class="form-label">Nome</label>
-                    <input type="text" id="name" name="name" class="form-control" required 
-                        pattern="^[A-Za-zÀ-ÿ ']+$" title="Por favor, insira um nome válido." placeholder="Coloque seu Nome">
+                    <label for="login" class="form-label">Login</label>
+                    <input type="text" id="login" name="login" class="form-control" required 
+                        pattern="^[A-Za-zÀ-ÿ ']+$" title="Por favor, insira um login válido." placeholder="Coloque seu Login">
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" id="email" name="email" class="form-control" required placeholder="Coloque seu Email">
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Senha</label>
-                    <input type="password" id="password" name="password" class="form-control" required 
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" id="senha" name="senha" class="form-control" required 
                         minlength="6" title="A senha deve ter pelo menos 6 caracteres." placeholder="Coloque sua Senha">
                 </div>
                 <!-- Botão com bootstrap -->
                 <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                <button type="button" class="btn secondary" onclick="window.location.href='../pages/registrar.html'">Registrar-se</button>
             </form>
         </div>
     </div>
+    <!-- script de login usando API -->
+    <script src="../assets/js/login.js"></script>
 </body>
 </html>
